@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\shared\CalculateMe.Shared\CalculateMe.Shared.csproj" />
+    <ProjectReference Include="..\CalculateMe.Result.Application\CalculateMe.Result.Application.csproj" />
+  </ItemGroup>
+
+</Project>
