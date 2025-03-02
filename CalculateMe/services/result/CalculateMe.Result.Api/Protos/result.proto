@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "CalculateMe.Result.Api";
+
+service ResultService {
+    rpc GetResult (ResultRequest) returns (ResultResponse);
+}
+
+message ResultRequest {
+    string request_id = 1;
+}
+
+message ResultResponse {
+    double total = 1;
+}

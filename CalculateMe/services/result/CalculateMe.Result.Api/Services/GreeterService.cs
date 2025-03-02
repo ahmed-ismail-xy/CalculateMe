@@ -1,5 +1,4 @@
 using Grpc.Core;
-using CalculateMe.Result.Api;
 
 namespace CalculateMe.Result.Api.Services;
 

@@ -13,7 +13,7 @@ public static class DependencyInjection
         this IServiceCollection services,
         IConfiguration configuration)
     {
-        var rabbitMqHost = configuration["RabbitMq:Host"] ?? throw new ArgumentNullException(nameof(configuration), "RabbitMq:Host is not configured");
+        var rabbitMqHost = configuration["RabbitMq:Hostname"] ?? throw new ArgumentNullException(nameof(configuration), "RabbitMq:Host is not configured");
         var rabbitMqUsername = configuration["RabbitMq:Username"] ?? throw new ArgumentNullException(nameof(configuration), "RabbitMq:Username is not configured");
         var rabbitMqPassword = configuration["RabbitMq:Password"] ?? throw new ArgumentNullException(nameof(configuration), "RabbitMq:Password is not configured");
 
